@@ -15,7 +15,7 @@
 #box-container{
     display: flex;
     justify-content: center;
-    margin: 35px auto;
+    margin: 40px auto;
     width: 90%;
 }
 
@@ -71,7 +71,7 @@
 /* thumbnail */
 
 #thumbnail-container{
-    max-width: 40%;
+    max-width: 230px;
     display: flex;
     flex-direction: column;
 }
@@ -83,6 +83,16 @@
     object-fit:cover;
     object-position: center;
     overflow: hidden;
+    cursor:pointer;
+    filter: contrast(0.4);
+}
+
+/* classe che permette di evidenziare l'immagine una volta cliccata, 
+importante per js */
+
+.selected{
+    filter: contrast(2);
+    border: 2px solid yellow;
 }
 
 
