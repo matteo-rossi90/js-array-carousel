@@ -95,9 +95,13 @@ for (let i = 0; i < thumbButton.length; i++) {
         // Rimuovere la classe active dall'immagine attualmente attiva
         items[activeItems].classList.remove("active");
 
-        // Rimuovere la classe selected da tutte le anteprime
+        // reiterare il processo di aggiunta e di rimozione della classe
+        //selected (contenente la stilizzazione delle immagini) per ogni
+        //box-image
         for (let x = 0; x < thumbButton.length; x++) {
-        thumbButton[x].classList.remove("selected");
+            
+            // Rimuovere la classe selected da tutte le anteprime
+            thumbButton[x].classList.remove("selected");
             
             //aggiungere a img l'effetto che annulla il filtro quando selezionata
             this.classList.add("selected");
